@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Portfolio - Niel Vid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-server text-purple-500 text-2xl mr-3"></i>
+                    <span class="text-xl font-bold">DevOps Portfolio</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-purple-400 transition">Home</a>
+                    <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
+                    <a href="#skills" class="hover:text-purple-400 transition">Skills</a>
+                    <a href="#experience" class="hover:text-purple-400 transition">Experience</a>
+                    <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+                </div>
+                <button id="menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-16 left-0 right-0 bg-gray-800 border-b border-gray-700 md:hidden">
+        <div class="flex flex-col space-y-4 p-4">
+            <a href="#home" class="hover:text-purple-400 transition">Home</a>
+            <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
+            <a href="#skills" class="hover:text-purple-400 transition">Skills</a>
+            <a href="#experience" class="hover:text-purple-400 transition">Experience</a>
+            <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-pulse">DevOps Engineer</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">Building scalable infrastructure, automating deployments, and optimizing cloud solutions</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">View My Work</a>
+                <a href="#contact" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Get In Touch</a>
+            </div>
+            <div class="mt-12">
+                <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-cloud text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AWS Infrastructure as Code</h3>
+                        <p class="text-gray-400 mb-4">Automated deployment of VPC, EC2, RDS, and S3 using Terraform with modular architecture</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">Terraform</span>
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">VPC</span>
+                        </div>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-cube text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kubernetes Deployment Pipeline</h3>
+                        <p class="text-gray-400 mb-4">End-to-end CI/CD pipeline with Docker, Kubernetes, and GitLab for microservices deployment</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm">Docker</span>
+                            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm">GitLab CI</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="bg-gradient-to-r from-orange-500 to-red-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-cogs text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">CI/CD Pipeline with Jenkins</h3>
+                        <p class="text-gray-400 mb-4">Automated build, test, and deployment pipeline with Jenkins, SonarQube, and artifact management</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm">Jenkins</span>
+                            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm">SonarQube</span>
+                            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm">Groovy</span>
+                        </div>
+                        <a href="#" class="text-orange-400 hover:text-orange-300 font-semibold">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="bg-gradient-to-r from-green-500 to-emerald-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Monitoring & Logging Stack</h3>
+                        <p class="text-gray-400 mb-4">Complete observability solution with Prometheus, Grafana, ELK Stack, and AlertManager</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">Prometheus</span>
+                            <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">Grafana</span>
+                            <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">ELK</span>
+                        </div>
+                        <a href="#" class="text-green-400 hover:text-green-300 font-semibold">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-lock text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Infrastructure Security Hardening</h3>
+                        <p class="text-gray-400 mb-4">Secure infrastructure setup with SSL/TLS, firewalls, IAM policies, and vulnerability scanning</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">Security</span>
+                            <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">IAM</span>
+                            <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">SSL/TLS</span>
+                        </div>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-semibold">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="bg-gradient-to-r from-cyan-500 to-blue-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-server text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Multi-Cloud Orchestration</h3>
+                        <p class="text-gray-400 mb-4">Unified management across AWS, Azure, and GCP with Ansible and custom automation scripts</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Ansible</span>
+                            <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Multi-Cloud</span>
+                            <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Python</span>
+                        </div>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cloud Platforms -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-cloud text-blue-400 mr-3"></i>Cloud Platforms
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ AWS (EC2, S3, RDS, VPC, Lambda, CloudFormation)</li>
+                        <li>✓ Azure (VMs, App Services, AKS, Storage)</li>
+                        <li>✓ GCP (Compute Engine, Cloud Run, GKE)</li>
+                    </ul>
+                </div>
+
+                <!-- Containerization & Orchestration -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-cube text-purple-400 mr-3"></i>Containers & Orchestration
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Docker (Images, Registries, Compose)</li>
+                        <li>✓ Kubernetes (Deployments, Services, Ingress)</li>
+                        <li>✓ Helm Charts & Package Management</li>
+                    </ul>
+                </div>
+
+                <!-- IaC & Configuration -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-code text-green-400 mr-3"></i>IaC & Configuration
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Terraform & CloudFormation</li>
+                        <li>✓ Ansible Playbooks</li>
+                        <li>✓ HashiCorp Vault & Consul</li>
+                    </ul>
+                </div>
+
+                <!-- CI/CD & DevOps Tools -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-cogs text-orange-400 mr-3"></i>CI/CD & DevOps
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Jenkins & GitLab CI/CD</li>
+                        <li>✓ GitHub Actions</li>
+                        <li>✓ ArgoCD & Spinnaker</li>
+                    </ul>
+                </div>
+
+                <!-- Monitoring & Logging -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-chart-line text-red-400 mr-3"></i>Monitoring & Logging
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Prometheus & Grafana</li>
+                        <li>✓ ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                        <li>✓ Datadog & New Relic</li>
+                    </ul>
+                </div>
+
+                <!-- Scripting & Languages -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-terminal text-cyan-400 mr-3"></i>Languages
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Python, Bash, Go</li>
+                        <li>✓ YAML, JSON, HCL</li>
+                        <li>✓ Groovy (Jenkins)</li>
+                    </ul>
+                </div>
+
+                <!-- Version Control -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-code-branch text-yellow-400 mr-3"></i>Version Control
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Git & GitHub</li>
+                        <li>✓ GitLab & Bitbucket</li>
+                        <li>✓ Branch Strategies & Workflows</li>
+                    </ul>
+                </div>
+
+                <!-- Additional Tools -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-tools text-indigo-400 mr-3"></i>Additional Tools
+                    </h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>✓ Docker Registry & Harbor</li>
+                        <li>✓ Load Balancing & CDN</li>
+                        <li>✓ Linux System Administration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="relative pl-8 border-l-2 border-purple-500">
+                    <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-2.5 top-0"></div>
+                    <h3 class="text-2xl font-bold">Senior DevOps Engineer</h3>
+                    <p class="text-purple-400 font-semibold">Company Name • 2022 - Present</p>
+                    <p class="text-gray-300 mt-2">Led cloud infrastructure migration to AWS, implemented Kubernetes-based microservices architecture, and established CI/CD pipelines using GitLab CI reducing deployment time by 80%.</p>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="relative pl-8 border-l-2 border-purple-500">
+                    <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-2.5 top-0"></div>
+                    <h3 class="text-2xl font-bold">DevOps Engineer</h3>
+                    <p class="text-purple-400 font-semibold">Previous Company • 2020 - 2022</p>
+                    <p class="text-gray-300 mt-2">Managed containerized applications using Docker and Kubernetes, maintained monitoring and logging infrastructure with Prometheus and ELK Stack, and automated infrastructure provisioning with Terraform.</p>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="relative pl-8 border-l-2 border-purple-500">
+                    <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-2.5 top-0"></div>
+                    <h3 class="text-2xl font-bold">Junior DevOps Engineer</h3>
+                    <p class="text-purple-400 font-semibold">Startup Company • 2019 - 2020</p>
+                    <p class="text-gray-300 mt-2">Assisted in infrastructure setup and maintenance, deployed applications on AWS EC2 instances, and supported CI/CD pipeline development with Jenkins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-8">Let's Work Together</h2>
+            <p class="text-xl mb-8 text-gray-200">I'm always interested in DevOps challenges and opportunities. Feel free to reach out!</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+                <a href="mailto:your.email@example.com" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-envelope mr-2"></i>Send Email
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
+                    <i class="fab fa-github mr-2"></i>GitHub
+                </a>
+            </div>
+
+            <div class="flex justify-center gap-6 text-2xl">
+                <a href="https://twitter.com" target="_blank" class="hover:text-gray-200 transition"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-gray-200 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="hover:text-gray-200 transition"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2024 DevOps Portfolio. All rights reserved.</p>
+            <p class="mt-2">Built with HTML, Tailwind CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
