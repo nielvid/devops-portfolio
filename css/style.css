@@ -1,0 +1,52 @@
+html { scroll-behavior: smooth; }
+
+/* Typed cursor */
+.typed-cursor {
+  display: inline-block;
+  width: 3px;
+  background: #fff;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* Dark hero / contact bg */
+.gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f172a 100%); }
+
+/* Card hover */
+.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+
+/* Skill bar */
+.skill-bar-fill {
+  height: 8px;
+  border-radius: 4px;
+  width: 0;
+  transition: width 1.2s ease;
+}
+
+/* Timeline dot */
+.timeline-dot {
+  position: absolute;
+  width: 14px; height: 14px;
+  background: #38bdf8;
+  border-radius: 50%;
+  left: -7px; top: 4px;
+}
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Active nav link */
+.nav-link.active { color: #38bdf8; }
+
+/* Section divider */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px; height: 4px;
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+  border-radius: 2px;
+  margin: 12px auto 0;
+}

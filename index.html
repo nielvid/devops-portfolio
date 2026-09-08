@@ -3,369 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Portfolio - Niel Vid</title>
+    <title>Godson | DevOps Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-900 text-gray-100">
-    <!-- Navigation -->
-    <nav class="fixed w-full top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <i class="fas fa-server text-purple-500 text-2xl mr-3"></i>
-                    <span class="text-xl font-bold">DevOps Portfolio</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="hover:text-purple-400 transition">Home</a>
-                    <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
-                    <a href="#github-projects" class="hover:text-purple-400 transition">GitHub</a>
-                    <a href="#skills" class="hover:text-purple-400 transition">Skills</a>
-                    <a href="#experience" class="hover:text-purple-400 transition">Experience</a>
-                    <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
-                </div>
-                <button id="menu-btn" class="md:hidden text-2xl">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden fixed top-16 left-0 right-0 bg-gray-800 border-b border-gray-700 md:hidden">
-        <div class="flex flex-col space-y-4 p-4">
-            <a href="#home" class="hover:text-purple-400 transition">Home</a>
-            <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
-            <a href="#github-projects" class="hover:text-purple-400 transition">GitHub</a>
-            <a href="#skills" class="hover:text-purple-400 transition">Skills</a>
-            <a href="#experience" class="hover:text-purple-400 transition">Experience</a>
-            <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+<!-- Navigation -->
+<nav id="navbar" class="fixed w-full top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <i class="fas fa-terminal text-sky-400 text-xl mr-2"></i>
+                <span class="text-lg font-bold">God<span class="text-sky-400">son</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="nav-link hover:text-sky-400 transition">Home</a>
+                <a href="#about" class="nav-link hover:text-sky-400 transition">About</a>
+                <a href="#projects" class="nav-link hover:text-sky-400 transition">Projects</a>
+                <a href="#github-section" class="nav-link hover:text-sky-400 transition">GitHub</a>
+                <a href="#skills" class="nav-link hover:text-sky-400 transition">Skills</a>
+                <a href="#experience" class="nav-link hover:text-sky-400 transition">Experience</a>
+                <a href="#contact" class="nav-link hover:text-sky-400 transition">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-xl"><i class="fas fa-bars"></i></button>
         </div>
     </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center pt-16">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-pulse">DevOps Engineer</h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-200">Building scalable infrastructure, automating deployments, and optimizing cloud solutions</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#projects" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">View My Work</a>
-                <a href="#contact" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Get In Touch</a>
-            </div>
-            <div class="mt-12">
-                <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
-            </div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed top-16 left-0 right-0 bg-gray-800 border-b border-gray-700 md:hidden z-40">
+    <div class="flex flex-col space-y-4 p-4 text-sm">
+        <a href="#home" class="hover:text-sky-400 transition">Home</a>
+        <a href="#about" class="hover:text-sky-400 transition">About</a>
+        <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+        <a href="#github-section" class="hover:text-sky-400 transition">GitHub</a>
+        <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+        <a href="#experience" class="hover:text-sky-400 transition">Experience</a>
+        <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section id="home" class="gradient-bg min-h-screen flex items-center justify-center pt-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <!-- <p class="text-sky-400 text-lg mb-4 tracking-widest uppercase">Welcome to my portfolio</p> -->
+        <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm <span class="text-sky-300">Godson</span></h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-300">
+            I'm a <span id="typed-text" class="text-sky-300"></span><span class="typed-cursor"></span>
+        </h2>
+        <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">Building scalable infrastructure, automating deployments, and optimizing cloud solutions for modern engineering teams.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#projects" class="bg-sky-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-sky-400 transition">View My Work</a>
+            <a href="#contact" class="border-2 border-gray-500 px-8 py-3 rounded-full font-semibold hover:border-sky-400 hover:text-sky-400 transition">Get In Touch</a>
         </div>
-    </section>
+        <div class="mt-16 flex justify-center gap-6 text-2xl">
+            <a href="https://github.com/nielvid" target="_blank" class="hover:text-sky-400 transition"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/instanceofgod/" target="_blank" class="hover:text-sky-400 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" class="hover:text-sky-400 transition"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="mt-12"><a href="#about"><i class="fas fa-chevron-down text-2xl animate-bounce"></i></a></div>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
-                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-cloud text-6xl text-white"></i>
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16 section-title reveal">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 rounded-full overflow-hidden shadow-2xl border-2 border-gray-600">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFyrRQZoKS4hw/profile-displayphoto-crop_800_800/B4DZgysuBQHsAM-/0/1753197261596?e=1790208000&v=beta&t=z82GKFzY6543MctcySpNsYm5Qxk2Po4j047UOccTP90" alt="Niel Vid" class="w-full h-full object-cover">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">AWS Infrastructure as Code</h3>
-                        <p class="text-gray-400 mb-4">Automated deployment of VPC, EC2, RDS, and S3 using Terraform with modular architecture</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">Terraform</span>
-                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">AWS</span>
-                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">VPC</span>
-                        </div>
-                        <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">View Project →</a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
-                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-cube text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Kubernetes Deployment Pipeline</h3>
-                        <p class="text-gray-400 mb-4">End-to-end CI/CD pipeline with Docker, Kubernetes, and GitLab for microservices deployment</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm">Kubernetes</span>
-                            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm">Docker</span>
-                            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm">GitLab CI</span>
-                        </div>
-                        <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold">View Project →</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
-                    <div class="bg-gradient-to-r from-orange-500 to-red-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-cogs text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">CI/CD Pipeline with Jenkins</h3>
-                        <p class="text-gray-400 mb-4">Automated build, test, and deployment pipeline with Jenkins, SonarQube, and artifact management</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm">Jenkins</span>
-                            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm">SonarQube</span>
-                            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm">Groovy</span>
-                        </div>
-                        <a href="#" class="text-orange-400 hover:text-orange-300 font-semibold">View Project →</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
-                    <div class="bg-gradient-to-r from-green-500 to-emerald-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Monitoring & Logging Stack</h3>
-                        <p class="text-gray-400 mb-4">Complete observability solution with Prometheus, Grafana, ELK Stack, and AlertManager</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">Prometheus</span>
-                            <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">Grafana</span>
-                            <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">ELK</span>
-                        </div>
-                        <a href="#" class="text-green-400 hover:text-green-300 font-semibold">View Project →</a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
-                    <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-lock text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Infrastructure Security Hardening</h3>
-                        <p class="text-gray-400 mb-4">Secure infrastructure setup with SSL/TLS, firewalls, IAM policies, and vulnerability scanning</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">Security</span>
-                            <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">IAM</span>
-                            <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">SSL/TLS</span>
-                        </div>
-                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-semibold">View Project →</a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="card-hover bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
-                    <div class="bg-gradient-to-r from-cyan-500 to-blue-600 h-40 flex items-center justify-center">
-                        <i class="fas fa-server text-6xl text-white"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Multi-Cloud Orchestration</h3>
-                        <p class="text-gray-400 mb-4">Unified management across AWS, Azure, and GCP with Ansible and custom automation scripts</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Ansible</span>
-                            <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Multi-Cloud</span>
-                            <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Python</span>
-                        </div>
-                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Project →</a>
+                    <div class="absolute -bottom-4 -right-4 bg-gray-700 border border-gray-600 rounded-full px-4 py-2 text-sm font-semibold shadow-lg">
+                        <i class="fas fa-check-circle mr-1"></i>Available for hire
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- GitHub Projects Section -->
-    <section id="github-projects" class="py-20 bg-gray-900">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 text-center">Open Source Projects</h2>
-            <div id="github-projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projects will be loaded here by JavaScript -->
-                <div class="col-span-full text-center">
-                    <p class="text-gray-400">Loading GitHub projects...</p>
+            <div class="reveal">
+                <h3 class="text-2xl font-bold mb-4">DevOps Engineer & Cloud Architect</h3>
+                <p class="text-gray-400 mb-4 leading-relaxed">I'm a passionate DevOps Engineer with 5+ years of experience designing and maintaining cloud infrastructure, building CI/CD pipelines, and enabling engineering teams to ship faster and more reliably.</p>
+                <p class="text-gray-400 mb-6 leading-relaxed">I specialize in AWS, GCP, OCI, Kubernetes, Terraform, and automation — turning complex infrastructure challenges into elegant, repeatable solutions.</p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-gray-800 rounded-lg p-4 text-center border border-gray-700">
+                        <div class="text-3xl font-bold text-sky-400">5+</div>
+                        <div class="text-gray-400 text-sm">Years Experience</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4 text-center border border-gray-700">
+                        <div class="text-3xl font-bold text-sky-400">20+</div>
+                        <div class="text-gray-400 text-sm">Projects Completed</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4 text-center border border-gray-700">
+                        <div class="text-3xl font-bold text-sky-400">3</div>
+                        <div class="text-gray-400 text-sm">Cloud Certifications</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4 text-center border border-gray-700">
+                        <div class="text-3xl font-bold text-sky-400">10+</div>
+                        <div class="text-gray-400 text-sm">Open Source Repos</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Cloud Platforms -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-cloud text-blue-400 mr-3"></i>Cloud Platforms
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ AWS (EC2, S3, RDS, VPC, Lambda, CloudFormation)</li>
-                        <li>✓ Azure (VMs, App Services, AKS, Storage)</li>
-                        <li>✓ GCP (Compute Engine, Cloud Run, GKE)</li>
-                    </ul>
-                </div>
-
-                <!-- Containerization & Orchestration -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-cube text-purple-400 mr-3"></i>Containers & Orchestration
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ Docker (Images, Registries, Compose)</li>
-                        <li>✓ Kubernetes (Deployments, Services, Ingress)</li>
-                        <li>✓ Helm Charts & Package Management</li>
-                    </ul>
-                </div>
-
-                <!-- IaC & Configuration -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-code text-green-400 mr-3"></i>IaC & Configuration
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ Terraform & CloudFormation</li>
-                        <li>✓ Ansible Playbooks</li>
-                        <li>✓ HashiCorp Vault & Consul</li>
-                    </ul>
-                </div>
-
-                <!-- CI/CD & DevOps Tools -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-cogs text-orange-400 mr-3"></i>CI/CD & DevOps
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ Jenkins & GitLab CI/CD</li>
-                        <li>✓ GitHub Actions</li>
-                        <li>✓ ArgoCD & Spinnaker</li>
-                    </ul>
-                </div>
-
-                <!-- Monitoring & Logging -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-chart-line text-red-400 mr-3"></i>Monitoring & Logging
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ Prometheus & Grafana</li>
-                        <li>✓ ELK Stack (Elasticsearch, Logstash, Kibana)</li>
-                        <li>✓ Datadog & New Relic</li>
-                    </ul>
-                </div>
-
-                <!-- Scripting & Languages -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-terminal text-cyan-400 mr-3"></i>Languages
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ Python, Bash, Go</li>
-                        <li>✓ YAML, JSON, HCL</li>
-                        <li>✓ Groovy (Jenkins)</li>
-                    </ul>
-                </div>
-
-                <!-- Version Control -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-code-branch text-yellow-400 mr-3"></i>Version Control
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ Git & GitHub</li>
-                        <li>✓ GitLab & Bitbucket</li>
-                        <li>✓ Branch Strategies & Workflows</li>
-                    </ul>
-                </div>
-
-                <!-- Additional Tools -->
-                <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-tools text-indigo-400 mr-3"></i>Additional Tools
-                    </h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✓ Docker Registry & Harbor</li>
-                        <li>✓ Load Balancing & CDN</li>
-                        <li>✓ Linux System Administration</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 text-center">Experience</h2>
-            <div class="space-y-8">
-                <!-- Experience 1 -->
-                <div class="relative pl-8 border-l-2 border-purple-500">
-                    <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-2.5 top-0"></div>
-                    <h3 class="text-2xl font-bold">Senior DevOps Engineer</h3>
-                    <p class="text-purple-400 font-semibold">Company Name • 2022 - Present</p>
-                    <p class="text-gray-300 mt-2">Led cloud infrastructure migration to AWS, implemented Kubernetes-based microservices architecture, and established CI/CD pipelines using GitLab CI reducing deployment time by 80%.</p>
-                </div>
-
-                <!-- Experience 2 -->
-                <div class="relative pl-8 border-l-2 border-purple-500">
-                    <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-2.5 top-0"></div>
-                    <h3 class="text-2xl font-bold">DevOps Engineer</h3>
-                    <p class="text-purple-400 font-semibold">Previous Company • 2020 - 2022</p>
-                    <p class="text-gray-300 mt-2">Managed containerized applications using Docker and Kubernetes, maintained monitoring and logging infrastructure with Prometheus and ELK Stack, and automated infrastructure provisioning with Terraform.</p>
-                </div>
-
-                <!-- Experience 3 -->
-                <div class="relative pl-8 border-l-2 border-purple-500">
-                    <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-2.5 top-0"></div>
-                    <h3 class="text-2xl font-bold">Junior DevOps Engineer</h3>
-                    <p class="text-purple-400 font-semibold">Startup Company • 2019 - 2020</p>
-                    <p class="text-gray-300 mt-2">Assisted in infrastructure setup and maintenance, deployed applications on AWS EC2 instances, and supported CI/CD pipeline development with Jenkins.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 gradient-bg">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-8">Let's Work Together</h2>
-            <p class="text-xl mb-8 text-gray-200">I'm always interested in DevOps challenges and opportunities. Feel free to reach out!</p>
-            
-            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-                <a href="mailto:your.email@example.com" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                    <i class="fas fa-envelope mr-2"></i>Send Email
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
-                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
-                </a>
-                <a href="https://github.com/nielvid" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
-                    <i class="fab fa-github mr-2"></i>GitHub
+                <a href="#" class="inline-flex items-center bg-sky-600 hover:bg-sky-500 px-6 py-3 rounded-full font-semibold transition">
+                    <i class="fas fa-download mr-2"></i>Download Resume
                 </a>
             </div>
+        </div>
+    </div>
+</section>
 
-            <div class="flex justify-center gap-6 text-2xl">
-                <a href="https://twitter.com" target="_blank" class="hover:text-gray-200 transition"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="hover:text-gray-200 transition"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/nielvid" target="_blank" class="hover:text-gray-200 transition"><i class="fab fa-github"></i></a>
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16 section-title reveal">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="card-hover bg-gray-900 rounded-xl overflow-hidden border border-gray-700 reveal">
+                <div class="bg-gradient-to-r from-blue-500 to-blue-700 h-40 flex items-center justify-center">
+                    <i class="fas fa-cloud text-6xl text-white opacity-90"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">AWS Infrastructure as Code</h3>
+                    <p class="text-gray-400 text-sm mb-4">Automated VPC, EC2, RDS, and S3 provisioning using Terraform with modular, reusable architecture.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-xs">Terraform</span>
+                        <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-xs">AWS</span>
+                        <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-xs">VPC</span>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 text-sm font-semibold">View Project →</a>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 py-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
-            <p>&copy; 2024 DevOps Portfolio. All rights reserved.</p>
-            <p class="mt-2">Built with HTML, Tailwind CSS, and JavaScript</p>
-        </div>
-    </footer>
+            <div class="card-hover bg-gray-900 rounded-xl overflow-hidden border border-gray-700 reveal">
+                <div class="bg-gradient-to-r from-purple-500 to-purple-700 h-40 flex items-center justify-center">
+                    <i class="fas fa-cube text-6xl text-white opacity-90"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Kubernetes Deployment Pipeline</h3>
+                    <p class="text-gray-400 text-sm mb-4">End-to-end CI/CD with Docker, Kubernetes, and GitLab CI for microservices at scale.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-xs">Kubernetes</span>
+                        <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-xs">Docker</span>
+                        <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-xs">GitLab CI</span>
+                    </div>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 text-sm font-semibold">View Project →</a>
+                </div>
+            </div>
 
-    <script src="js/main.js"></script>
+            <div class="card-hover bg-gray-900 rounded-xl overflow-hidden border border-gray-700 reveal">
+                <div class="bg-gradient-to-r from-orange-500 to-red-600 h-40 flex items-center justify-center">
+                    <i class="fas fa-cogs text-6xl text-white opacity-90"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">CI/CD Pipeline with Jenkins</h3>
+                    <p class="text-gray-400 text-sm mb-4">Automated build, test, and deploy pipeline with Jenkins, SonarQube, and Nexus artifact management.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-xs">Jenkins</span>
+                        <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-xs">SonarQube</span>
+                        <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-xs">Groovy</span>
+                    </div>
+                    <a href="#" class="text-orange-400 hover:text-orange-300 text-sm font-semibold">View Project →</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-gray-900 rounded-xl overflow-hidden border border-gray-700 reveal">
+                <div class="bg-gradient-to-r from-green-500 to-emerald-600 h-40 flex items-center justify-center">
+                    <i class="fas fa-chart-line text-6xl text-white opacity-90"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Monitoring & Logging Stack</h3>
+                    <p class="text-gray-400 text-sm mb-4">Full observability with Prometheus, Grafana, ELK Stack, and AlertManager for production systems.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-xs">Prometheus</span>
+                        <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-xs">Grafana</span>
+                        <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-xs">ELK</span>
+                    </div>
+                    <a href="#" class="text-green-400 hover:text-green-300 text-sm font-semibold">View Project →</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-gray-900 rounded-xl overflow-hidden border border-gray-700 reveal">
+                <div class="bg-gradient-to-r from-indigo-500 to-indigo-700 h-40 flex items-center justify-center">
+                    <i class="fas fa-lock text-6xl text-white opacity-90"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Infrastructure Security Hardening</h3>
+                    <p class="text-gray-400 text-sm mb-4">Secure setup with SSL/TLS, WAF, IAM least-privilege policies, and automated vulnerability scanning.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-xs">Security</span>
+                        <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-xs">IAM</span>
+                        <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-xs">SSL/TLS</span>
+                    </div>
+                    <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold">View Project →</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-gray-900 rounded-xl overflow-hidden border border-gray-700 reveal">
+                <div class="bg-gradient-to-r from-cyan-500 to-blue-600 h-40 flex items-center justify-center">
+                    <i class="fas fa-server text-6xl text-white opacity-90"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Multi-Cloud Orchestration</h3>
+                    <p class="text-gray-400 text-sm mb-4">Unified management across AWS, Azure, and GCP using Ansible and custom Python automation scripts.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-xs">Ansible</span>
+                        <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-xs">Multi-Cloud</span>
+                        <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-xs">Python</span>
+                    </div>
+                    <a href="#" class="text-cyan-400 hover:text-cyan-300 text-sm font-semibold">View Project →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GitHub Projects Section -->
+<section id="github-section" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16 section-title reveal">GitHub Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="card-hover bg-gray-800 rounded-xl border border-gray-700 p-6 flex flex-col justify-between reveal">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fab fa-github text-2xl text-gray-400"></i>
+                        <h3 class="text-lg font-bold">swiftdeploy</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">A fast, lightweight deployment automation tool for shipping applications to cloud environments with minimal configuration.</p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-yellow-900 text-yellow-200 px-3 py-1 rounded-full text-xs">Shell</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs">Automation</span>
+                    </div>
+                    <a href="https://github.com/nielvid/swiftdeploy" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-semibold">View on GitHub →</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-gray-800 rounded-xl border border-gray-700 p-6 flex flex-col justify-between reveal">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fab fa-github text-2xl text-gray-400"></i>
+                        <h3 class="text-lg font-bold">anomaly-detector</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Infrastructure and application anomaly detection system using metrics analysis to surface unusual patterns before they become incidents.</p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-xs">Python</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs">Monitoring</span>
+                    </div>
+                    <a href="https://github.com/nielvid/anomaly-detector" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-semibold">View on GitHub →</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-gray-800 rounded-xl border border-gray-700 p-6 flex flex-col justify-between reveal">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fab fa-github text-2xl text-gray-400"></i>
+                        <h3 class="text-lg font-bold">forge</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">A Python-based infrastructure tooling project for building and managing DevOps workflows and pipeline configurations.</p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-xs">Python</span>
+                        <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs">Tooling</span>
+                    </div>
+                    <a href="https://github.com/nielvid/forge" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-semibold">View on GitHub →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16 section-title reveal">Skills & Technologies</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <!-- Core Competencies as tag cloud -->
+            <div class="reveal">
+                <h3 class="text-xl font-bold mb-6 text-sky-400">Core Competencies</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Cloud Infrastructure</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Container Orchestration</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Infrastructure as Code</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">CI/CD Automation</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Site Reliability Engineering</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Monitoring & Observability</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Security Hardening</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Scripting & Automation</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Networking & DNS</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Disaster Recovery</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Cost Optimisation</span>
+                    <span class="bg-gray-700 border border-gray-600 text-gray-200 px-4 py-2 rounded-lg text-sm">Linux Administration</span>
+                </div>
+            </div>
+
+            <!-- Tech Grid -->
+            <div class="reveal">
+                <h3 class="text-xl font-bold mb-6 text-sky-400">Tools & Platforms</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                        <i class="fas fa-cloud text-blue-400 text-xl mb-2"></i>
+                        <h4 class="font-semibold text-sm mb-1">Cloud</h4>
+                        <p class="text-gray-400 text-xs">AWS · Azure · GCP</p>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                        <i class="fas fa-cube text-sky-400 text-xl mb-2"></i>
+                        <h4 class="font-semibold text-sm mb-1">Containers</h4>
+                        <p class="text-gray-400 text-xs">Docker · Kubernetes · Helm</p>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                        <i class="fas fa-code text-green-400 text-xl mb-2"></i>
+                        <h4 class="font-semibold text-sm mb-1">IaC</h4>
+                        <p class="text-gray-400 text-xs">Terraform · Ansible · CloudFormation</p>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                        <i class="fas fa-cogs text-orange-400 text-xl mb-2"></i>
+                        <h4 class="font-semibold text-sm mb-1">CI/CD</h4>
+                        <p class="text-gray-400 text-xs">Jenkins · GitHub Actions · GitLab CI</p>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                        <i class="fas fa-chart-line text-red-400 text-xl mb-2"></i>
+                        <h4 class="font-semibold text-sm mb-1">Monitoring</h4>
+                        <p class="text-gray-400 text-xs">Prometheus · Grafana · ELK</p>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700">
+                        <i class="fas fa-terminal text-cyan-400 text-xl mb-2"></i>
+                        <h4 class="font-semibold text-sm mb-1">Languages</h4>
+                        <p class="text-gray-400 text-xs">Python · Bash · Go · HCL · Java · TypeScript · JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-16 section-title reveal">Experience</h2>
+        <div class="relative border-l-2 border-gray-600 ml-4 space-y-12">
+
+            <div class="relative pl-10 reveal">
+                <div class="timeline-dot"></div>
+                <span class="text-xs text-sky-400 font-semibold uppercase tracking-widest">2024 – Present</span>
+                <h3 class="text-xl font-bold mt-1">DevOps Engineer</h3>
+                <p class="text-gray-400 font-medium mb-2">Velonze Limited</p>
+                <p class="text-gray-400 text-sm leading-relaxed">Managed containerized applications with Docker,established CI/CD pipelines using GitLab CI — reducing deployment time by 80% and maintained monitoring infrastructure with Prometheus and ELK Stack, and automated provisioning with Terraform.</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">Docker</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">Prometheus</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">ELK</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">Terraform</span>
+                        <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">AWS</span>
+                            <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">GCP</span>
+                                <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">Oracle Cloud Infrastructure</span>
+                </div>
+            </div>
+
+            <div class="relative pl-10 reveal">
+                <div class="timeline-dot"></div>
+                <span class="text-xs text-sky-400 font-semibold uppercase tracking-widest">2021 – 2024</span>
+                <h3 class="text-xl font-bold mt-1">Software Engineer</h3>
+                <p class="text-gray-400 font-medium mb-2">FilmmakersMart</p>
+                <p class="text-gray-400 text-sm leading-relaxed">Assisted in infrastructure setup and maintenance, deployed applications on AWS EC2, and supported CI/CD pipeline development with Github Actions and Jenkins.</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">Jenkins</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">AWS EC2</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-700">Linux</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 gradient-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-4 reveal">Let's Work Together</h2>
+        <p class="text-center text-gray-400 mb-12 reveal">I'm open to DevOps roles, freelance projects, and collaborations. Drop me a message!</p>
+        <div class="grid md:grid-cols-2 gap-10">
+            <!-- Contact Info -->
+            <div class="reveal space-y-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gray-700 border border-gray-600 rounded-full flex items-center justify-center text-xl text-sky-400"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <p class="text-sm text-gray-500">Email</p>
+                        <a href="mailto:your.email@example.com" class="font-semibold hover:text-sky-400 transition">godson@techops.name.ng</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gray-700 border border-gray-600 rounded-full flex items-center justify-center text-xl text-sky-400"><i class="fab fa-linkedin"></i></div>
+                    <div>
+                        <p class="text-sm text-gray-500">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/instanceofgod/ target="_blank" class="font-semibold hover:text-sky-400 transition">linkedin.com/in/instanceofgod</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gray-700 border border-gray-600 rounded-full flex items-center justify-center text-xl text-sky-400"><i class="fab fa-github"></i></div>
+                    <div>
+                        <p class="text-sm text-gray-500">GitHub</p>
+                        <a href="https://github.com/nielvid" target="_blank" class="font-semibold hover:text-sky-400 transition">github.com/nielvid</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <form id="contact-form" class="reveal space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 placeholder-gray-500 text-white focus:outline-none focus:border-sky-400 transition" required>
+                <input type="email" placeholder="Your Email" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 placeholder-gray-500 text-white focus:outline-none focus:border-sky-400 transition" required>
+                <input type="text" placeholder="Subject" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 placeholder-gray-500 text-white focus:outline-none focus:border-sky-400 transition">
+                <textarea rows="4" placeholder="Your Message" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 placeholder-gray-500 text-white focus:outline-none focus:border-sky-400 transition resize-none" required></textarea>
+                <button type="submit" class="w-full bg-sky-600 hover:bg-sky-500 text-white font-semibold py-3 rounded-lg transition">
+                    <i class="fas fa-paper-plane mr-2"></i>Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 border-t border-gray-800 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
+        <div class="flex justify-center gap-6 text-xl mb-4">
+            <a href="https://github.com/nielvid" target="_blank" class="hover:text-sky-400 transition"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/instanceofgod/" target="_blank" class="hover:text-sky-400 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" class="hover:text-sky-400 transition"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Velonze. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
